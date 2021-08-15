@@ -202,7 +202,7 @@ button:hover {
     .banner .row .col-md-6:last-child {
         text-align: center;
     }
-    
+
     .banner .row .col-md-6:last-child img {
         margin-top: 50px;
     }
@@ -430,6 +430,75 @@ button:hover {
     .faq h2 button span {
         font-size: 16px;
         font-weight: 600;
+    }
+}
+
+
+/*****************************\
+      Best Shall Section
+\*****************************/
+.best-shall {
+    padding: 100px 0;
+}
+
+.best-shall .bg-content {
+    position: relative;
+}
+
+.best-shall .bg-content::before {
+    content: "";
+    top: -50px;
+    left: -50px;
+    width: 70%;
+    z-index: -1;
+    bottom: -50px;
+    position: absolute;
+    background-color: var(--theme);
+    transform: skew(9deg, 10.5deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.best-shall:hover .bg-content::before {
+    transform: skew(0deg, 0deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.best-shall .shalling-text,
+.best-shall .shalling-text .title,
+.best-shall .shalling-text .text-center {
+    text-align: right !important;
+}
+
+.best-shall .hr-line {
+    top: -25px;
+    width: 70px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 5px solid var(--theme);
+}
+
+.best-shall p::first-letter {
+    font-size: 24px;
+}
+
+.best-shall .btn {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .best-shall .title {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .best-shall .small-title {
+        font-size: 16px;
+    }
+
+    .best-shall .bg-content::before {
+        transform: skew(0deg, 0deg);
     }
 }
 
