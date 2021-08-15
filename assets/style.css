@@ -161,3 +161,47 @@ button:hover {
         height: auto;
     }
 }
+
+
+/*****************************\
+     Fetured Bikes Section
+\*****************************/
+.fetured-bikes {
+    margin-bottom: 50px;
+}
+
+.fetured-bikes .hr-line {
+    top: -42px;
+    width: 70px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid var(--theme);
+}
+
+.fetured-bikes .image:nth-child(1) img,
+.fetured-bikes .image:nth-child(3) img {
+    filter: grayscale(100%);
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+    .fetured-bikes .title {
+        font-size: 28px;
+    }
+
+    .fetured-bikes .small-title {
+        top: -35px;
+    }
+
+    .fetured-bikes .hr-line {
+        top: -55px;
+    }
+
+    .fetured-bikes .image:first-child {
+        padding-top: 0 !important;
+    }
+
+    .fetured-bikes .image {
+        padding-bottom: 0 !important;
+    }
+}
