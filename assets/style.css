@@ -320,6 +320,12 @@ button:hover {
     }
 }
 
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .happy-clients .card img {
+        width: 200px;
+    }
+}
+
 
 /*****************************\
           FAQ Section
@@ -429,11 +435,12 @@ button:hover {
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+
     .footer .li-content,
     .footer .col-md-6.d-flex.align-items-center {
         display: block !important;
     }
-    
+
     .footer .app {
         padding: 0;
     }
@@ -444,11 +451,11 @@ button:hover {
         flex-wrap: wrap-reverse;
         text-align: center;
     }
-    
+
     .footer ul li {
         margin: 0;
     }
-    
+
     .footer .download {
         text-align: center;
         margin-bottom: 32px;
