@@ -13,6 +13,7 @@
     --secondary: #6C6C6C;
     --secondaryDark: #18191F;
     --secondaryDeepDark: #0A0826;
+    --sectionDevider: #f3f3f4;
 }
 
 body {
@@ -203,5 +204,51 @@ button:hover {
 
     .fetured-bikes .image {
         padding-bottom: 0 !important;
+    }
+}
+
+
+/*****************************\
+     Fetured Bikes Section
+\*****************************/
+.latest-news {
+    padding: 50px 0;
+    background-color: var(--sectionDevider);
+}
+
+.latest-news .title {
+    margin-top: 0;
+}
+
+.latest-news .card {
+    border-radius: 10px;
+}
+
+.latest-news .card-body {
+    padding-bottom: 7px;
+}
+
+.latest-news .card .card-title {
+    font-weight: 600;
+}
+
+.latest-news .card .card-text {
+    font-size: 15px;
+    text-align: justify;
+    width: 100%;
+    height: 135px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .latest-news .title {
+        font-size: 28px;
+        margin-bottom: 0;
     }
 }
