@@ -383,3 +383,74 @@ button:hover {
         font-weight: 600;
     }
 }
+
+
+/*****************************\
+        Footer Section
+\*****************************/
+.footer {
+    padding: 50px 0;
+    color: var(--white);
+    background-color: var(--secondaryDeepDark);
+}
+
+.footer ul {
+    padding: 0;
+    font-size: 22px;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer ul li a {
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .copy {
+    font-size: 22px;
+    color: var(--secondary);
+}
+
+.footer .app {
+    font-size: 28px;
+    font-weight: 600;
+    padding-right: 18px;
+}
+
+.footer img {
+    max-width: 50%;
+}
+
+.footer .download {
+    text-align: right;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .footer .li-content,
+    .footer .col-md-6.d-flex.align-items-center {
+        display: block !important;
+    }
+    
+    .footer .app {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer .row {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+    
+    .footer ul li {
+        margin: 0;
+    }
+    
+    .footer .download {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
