@@ -79,6 +79,18 @@ button:hover {
     box-shadow: none !important;
 }
 
+/* Hover Animation */
+.hover-animation {
+    top: 0;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.hover-animation:hover {
+    top: -7px;
+    transition: all 0.4s ease-in-out;
+}
+
 /* Common Style Responsive */
 @media only screen and (max-width: 768px) {
     .btn {
@@ -305,5 +317,63 @@ button:hover {
 
     .happy-clients .card p {
         padding: 0;
+    }
+}
+
+
+/*****************************\
+          FAQ Section
+\*****************************/
+.faq {
+    padding: 50px 0;
+    background-color: var(--sectionDevider);
+}
+
+.faq .title {
+    margin-top: 0;
+}
+
+.faq .accordion-header {
+    margin-bottom: 5px;
+}
+
+.faq h2 .accordion-button:not(.collapsed),
+.faq h2 button {
+    color: #383838;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.faq h2 button span {
+    padding-right: 25px;
+    display: inline-block;
+}
+
+.accordion-item:first-of-type .accordion-button,
+.accordion-button,
+.faq h2 .accordion-button:not(.collapsed),
+.faq .accordion-item {
+    border-radius: 8px;
+}
+
+.faq h2 .accordion-button:not(.collapsed) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.faq .accordion-item:not(:first-of-type) {
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .faq .title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
+    .faq img {
+        margin-bottom: 20px;
     }
 }
