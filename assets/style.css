@@ -121,7 +121,7 @@ button:hover {
     .navbar {
         text-align: center;
     }
-    
+
     .navbar .navbar-collapse .btn {
         margin-bottom: 12px;
     }
@@ -147,6 +147,10 @@ button:hover {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
+}
+
+.banner .row .col-md-6:last-child {
+    text-align: right;
 }
 
 .modal-body img {
@@ -186,11 +190,21 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
     .banner {
+        height: auto;
         padding: 30px 0;
+        min-height: 100vh;
     }
 
     .banner .row {
         flex-wrap: wrap-reverse;
+    }
+
+    .banner .row .col-md-6:last-child {
+        text-align: center;
+    }
+    
+    .banner .row .col-md-6:last-child img {
+        margin-top: 50px;
     }
 
     .banner img {
