@@ -68,6 +68,16 @@ a {
     color: var(--theme);
 }
 
+.btn:active,
+button:active,
+.btn:focus,
+button:focus,
+.btn:hover,
+button:hover {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 /* Common Style Responsive */
 @media only screen and (max-width: 768px) {
     .btn {
@@ -95,6 +105,20 @@ a {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
+}
+
+.modal-body img {
+    margin-top: 20px;
+}
+
+.modal-body h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.modal-body p {
+    font-size: 14px;
 }
 
 /* Banner Responsive */
