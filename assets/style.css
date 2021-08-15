@@ -504,6 +504,98 @@ button:hover {
 
 
 /*****************************\
+      Best Shall Section
+\*****************************/
+.travel-companion {
+    margin-top: 60px;
+    padding: 100px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(images/travel-bg.jpg);
+}
+
+.travel-companion .card {
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.travel-companion .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.travel-companion .card .card-title {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.travel-companion .card:hover .card-title {
+    color: var(--white);
+}
+
+.travel-companion .card .card-body {
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    border-top: 3px solid var(--theme);
+}
+
+.travel-companion .card .card-body::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--theme);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.travel-companion .card:hover .card-body::before {
+    height: 59px;
+}
+
+.travel-companion .title {
+    margin-top: -145px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+    .travel-companion .card .card-title {
+        font-size: 15px;
+    }
+
+    .travel-companion .card:hover .card-body::before {
+        height: 53px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .travel-companion .container .col-6:nth-child(1),
+    .travel-companion .container .col-6:nth-child(2),
+    .travel-companion .container .col-6:nth-child(3) {
+        margin-bottom: 25px;
+    }
+}
+
+/*****************************\
         Footer Section
 \*****************************/
 .footer {
