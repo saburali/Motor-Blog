@@ -89,3 +89,44 @@ a {
     font-weight: 300;
     line-height: 22px;
 }
+
+/* Banner Responsive */
+@media only screen and (max-width: 1200px) {
+    .banner h2 {
+        letter-spacing: 0;
+    }
+
+    .banner p br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .banner h2 {
+        font-size: 38px;
+    }
+
+    .banner p {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        padding: 30px 0;
+    }
+
+    .banner .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .banner img {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banner {
+        height: auto;
+    }
+}
